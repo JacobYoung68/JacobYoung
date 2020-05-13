@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  background-color: #e0e5ec;
+  background-color: #cfd6e0;
   color: white;
 }
 
@@ -41,7 +41,7 @@ header {
 /* Tile Styles */
 div #Posts {
   border-radius: 19px;
-  background: #e0e5ec;
+  background: #cfd6e0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 400px;
@@ -51,7 +51,8 @@ div #Posts {
 div .Post {
   margin: 50px;
   border-radius: 31px;
-  box-shadow: 11px 11px 22px #a4a7ac, -11px -11px 22px #ffffff;
+  box-shadow:  8px 8px 29px #55585c, 
+  -8px -8px 29px #ffffff;
   overflow: hidden;
   position: relative;
   padding: 0px;
@@ -59,7 +60,7 @@ div .Post {
 
 .Post img {
   object-fit: cover;
-  opacity: 100%;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
   -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
@@ -71,13 +72,13 @@ button:focus {
 }
 
 button:hover img {
-  opacity: 40%;
+  opacity: 0.1;
   cursor: pointer;
 }
 
 button:hover #Post1 {
   color: black;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .Post h1 {
@@ -87,6 +88,18 @@ button:hover #Post1 {
   transform: translate(-50%, -50%);
   font-size: 80px;
 }
+
+#Content{
+  width:60%;
+}
+
+#ContentImage{
+  width: 50%;
+}
+
+
+
+
 
 @media only screen and (max-width: 800px) {
   div #Posts {

@@ -1,7 +1,11 @@
 import PropTypes from "prop-types"
 import React from "react"
+import { Link } from "gatsby"
 
 import "../components/Style.css"
+import socialgh from '../images/github.png'
+import socialinsta from '../images/insta.png'
+import sociallinkedin from '../images/linkedin.png'
 
 const Header = ({ siteTitle }) => (
   <header
@@ -18,11 +22,11 @@ const Header = ({ siteTitle }) => (
         //padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 id="jyTitle">{siteTitle}</h1>
+      <Link to="/"><h1 id="jyTitle">{siteTitle}</h1></Link>
       <div id="socials">
-        <img src={require("../images/github.png")} alt="Test 2" />
-        <img src={require("../images/insta.png")} alt="Test 2" />
-        <img src={require("../images/linkedin.png")} alt="Test 2" />
+        <a href="https://www.linkedin.com/in/jajyoung/"><img src={sociallinkedin} alt="Linkedin" /></a>
+        <a href="https://github.com/JacobYoung68"><img src={socialgh} alt="Github" /></a>
+        <a href="http://google.com"><img src={socialinsta} alt="Instagram" /></a>
       </div>
     </div>
   </header>
