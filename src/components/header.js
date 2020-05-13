@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
@@ -20,6 +19,11 @@ const Header = ({ siteTitle }) => (
       }}
     >
       <h1 id="jyTitle">{siteTitle}</h1>
+      <div id="socials">
+        <img src={require("../images/github.png")} alt="Test 2" />
+        <img src={require("../images/insta.png")} alt="Test 2" />
+        <img src={require("../images/linkedin.png")} alt="Test 2" />
+      </div>
     </div>
   </header>
 )

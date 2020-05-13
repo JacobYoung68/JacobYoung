@@ -9,9 +9,29 @@ h1 {
   font-size: 72px;
 }
 
+header {
+  margin-bottom: 50px;
+  height: 100px;
+}
+
+#socials {
+  float: right;
+  margin-top: 100px;
+  filter: invert(1);
+}
+
+#socials img {
+  padding-left: 10px;
+}
+
+#socials img:hover {
+  cursor: pointer;
+}
+
 #jyTitle {
   font-size: 128px;
   margin: 0px;
+  float: left;
 }
 
 #subheading {
@@ -76,15 +96,25 @@ button:hover #Post1 {
     object-fit: cover;
     margin: -10px;
   }
+  #subheading {
+    font-size: 2em;
+    overflow-wrap: normal;
+  }
+  #jyTitle {
+    text-align: center;
+  }
+  #socials {
+    align-content: center;
+  }
 }
 
 @media only screen and (max-width: 460px) {
   #jyTitle {
     font-size: 90px;
-    text-align: center;
   }
   #subheading {
-    font-size: 50px;
+    font-size: 2em;
+    overflow-wrap: normal;
   }
   .Post h1 {
     font-size: 60px;
