@@ -1,36 +1,97 @@
+/* General Styles */
 body {
   background-color: #e0e5ec;
+  color: white;
 }
+
+h1 {
+  color: white;
+  font-size: 72px;
+}
+
+#jyTitle {
+  font-size: 128px;
+  margin: 0px;
+}
+
+#subheading {
+  margin: 0px;
+}
+
+/* Tile Styles */
 div #Posts {
   border-radius: 19px;
   background: #e0e5ec;
-  box-shadow: inset 11px 11px 22px #a4a7ac, inset -11px -11px 22px #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 400px;
   grid-gap: 10px;
 }
 
-div #PostRow {
-  display: inline-flex;
-}
-
-div #Post {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+div .Post {
   margin: 50px;
   border-radius: 31px;
-  background: #e0e5ec;
   box-shadow: 11px 11px 22px #a4a7ac, -11px -11px 22px #ffffff;
-  background-image: url("../images/Testimg1.jpg");
-  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  padding: 0px;
 }
 
-p {
-  margin: 25px;
+.Post img {
+  object-fit: cover;
+  opacity: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
 }
 
-h1 {
-  color: white;
+button:focus {
+  outline: 0;
+}
+
+button:hover img {
+  opacity: 40%;
+  cursor: pointer;
+}
+
+button:hover #Post1 {
+  color: black;
+  opacity: 60%;
+}
+
+.Post h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+  div #Posts {
+    display: inline-block;
+  }
+  .Post img {
+    object-fit: cover;
+    margin: -10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  #jyTitle {
+    font-size: 90px;
+    text-align: center;
+  }
+  #subheading {
+    font-size: 50px;
+  }
+  .Post h1 {
+    font-size: 60px;
+  }
+  div .Post {
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
