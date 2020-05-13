@@ -1,0 +1,36 @@
+body {
+  background-color: #e0e5ec;
+}
+div #Posts {
+  border-radius: 19px;
+  background: #e0e5ec;
+  box-shadow: inset 11px 11px 22px #a4a7ac, inset -11px -11px 22px #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 400px;
+  grid-gap: 10px;
+}
+
+div #PostRow {
+  display: inline-flex;
+}
+
+div #Post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  border-radius: 31px;
+  background: #e0e5ec;
+  box-shadow: 11px 11px 22px #a4a7ac, -11px -11px 22px #ffffff;
+  background-image: url("../images/Testimg1.jpg");
+  background-size: cover;
+}
+
+p {
+  margin: 25px;
+}
+
+h1 {
+  color: white;
+}
