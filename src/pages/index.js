@@ -17,7 +17,7 @@ const IndexPage = () => (
 
       <button className="Post">
         <Link to='/MMC'>
-          <img src={testimg1} alt="Mobile Morse Code" />
+          <img src={testimg2} alt="Mobile Morse Code" />
           <h1 id="Post1">
             Mobile <br />
           Morse Code.
@@ -26,23 +26,23 @@ const IndexPage = () => (
       </button>
 
       <button className="Post">
+        <Link to='/NC'>
+          <img src={testimg2} alt="Narrative Code" />
+          <h1 id="Post1">Narrative Code.</h1>
+        </Link>
+      </button>
+
+      <button className="Post">
+        <Link to='/ThisSite'>
+          <img src={testimg2} alt="This Site" />
+          <h1 id="Post1">This Site.</h1>
+        </Link>
+      </button>
+
+      <button className="Post">
         <Link to='/Test1'>
           <img src={testimg2} alt="Test 1" />
           <h1 id="Post1">Test 1.</h1>
-        </Link>
-      </button>
-
-      <button className="Post">
-        <Link to='/Test2'>
-          <img src={testimg2} alt="Test 2" />
-          <h1 id="Post1">Test 2.</h1>
-        </Link>
-      </button>
-
-      <button className="Post">
-        <Link to='/Test3'>
-          <img src={testimg1} alt="Test 3" />
-          <h1 id="Post1">Test 3.</h1>
         </Link>
       </button>
     </div>
